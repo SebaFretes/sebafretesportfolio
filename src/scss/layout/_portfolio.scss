@@ -1,0 +1,81 @@
+.portfolio {
+    margin: 1rem 0;
+    background-color: $celeste;
+
+    .portfolio-contenido {
+        padding: 1rem 0;
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            color: $negro;
+            margin: 0;
+        }
+    }
+    
+    .portfolio-lista {
+        background-color: $grisClaro;
+        padding: 1rem;
+
+        &:hover {
+            ul {
+                cursor: pointer;
+            }
+        }
+        
+        li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: .5rem;
+
+            @include tablet {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                gap: 1.5rem;
+            }
+        }
+    }
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    top: 0;
+    display: grid;
+    place-items: center;
+}
+
+.btn-cerrar {
+    width: 5rem;
+    height: 5rem;
+    background-color: $gris;
+    color: $celeste;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    border-radius: 50%;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.link-site {
+    width: 10rem;
+    height: 5rem;
+    background-color: $celesteOscuro;
+    color: $blanco;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortfolioSebaFretes</title>
+    <link rel="stylesheet" href="/build/css/app.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="video">
+            <div class="overlay">
+                <div class="contenedor contenido-video">
+                    <h1>Sebastián Fretes</h1>
+                    <hr>
+                    <p>Desarrollador Front-End</p>                
+                </div>
+            </div>
+            <video autoplay muted loop>
+                <source src="/video.mp4" type="video/mp4"></source>
+            </video> 
+        </div>
+    </header>
+
+    <div class="myself">
+        <p>Hola! Mi nombre es Sebastián Fretes, soy estudiante de Desarrollo Web de Asunción, Paraguay. Me gusta escribir códigos y crear proyectos webs. Mis principales metas profesionales actuales son encontrar un trabajo que me brinde la oportunidad de profundizar y poner en práctica mis habilidades de programación adquiridas recientemente, seguir aprendiendo y crear nuevos proyectos que ayuden a crecer mis cualidades de desarrollador. Si estás en búsqueda de un desarrollador Front-End Junior, podés contactarme abajo.
+        </p>
+        <div class="idioma">
+            <img src="/build/img/usa.webp" alt="logo-inglés">
+            <a href="ingles.html">For English Description</a>
+        </div>
+    </div>
+
+    <nav class="navegacion">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#skills">Skills</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-contenido">
+            <h2>Portfolio</h2>
+        </div>
+        <div class="portfolio-lista">
+            <li>
+                <ul><img id="1" src="/build/img/img1.webp" alt="proyecto1"> <a href="https://primerproyectowebsebafretes.netlify.app/"></a> </ul>
+                <ul><img id="2" src="/build/img/img2.webp" alt="proyecto2"> <a href="https://frontendstoresebafretes.netlify.app/"></a> </ul>
+                <ul><img id="3" src="/build/img/img3.webp" alt="proyecto3"> <a href="https://distracted-hodgkin-7bbbe7.netlify.app/"></a> </ul>
+                <ul><img id="4" src="/build/img/img4.webp" alt="proyecto4"> <a href="https://sebafretesasuncionrockpopfestival.netlify.app/"></a> </ul>
+                <ul><img id="5" src="/build/img/img5.webp" alt="proyecto5"> <a href="https://sebafretespeluapppy.netlify.app/"></a> </ul>
+            </li>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="skills-contenido">
+            <h2>Skills</h2>
+        </div>
+        <div class="skills-lista">
+            <ul>
+                <li class="primero"><img id="HTML5" src="/build/img/html5.webp" alt="logohtml"></li>
+                <li class="segundo"><img id="CSS3" src="/build/img/css3.webp" alt="logocss"></li>
+                <li class="tercero"><img id="JavaScript" src="/build/img/js.webp" alt="logojs"></li>
+                <li class="cuarto"><img id="NodeJs" src="/build/img/nodejs.webp" alt="logonodejs"></li>
+                <li class="quinto"><img id="Gulp" src="/build/img/gulp.webp" alt="logogulp"></li>
+                <li class="sexto"><img id="SASS" src="/build/img/sass.webp" alt="logosass"></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <div class="contacto-contenido">
+            <h2>Contacto</h2>
+        </div>
+
+        <div class="formulario">
+            <form>
+                <fieldset>
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input class="input-text" type="text" placeholder="Tu nombre">
+                    </div>
+    
+                    <div class="campo">
+                        <label for="email">Email</label>
+                        <input class="input-text" type="email" placeholder="Tu email">
+                    </div>
+    
+                    <div class="campo">
+                        <label>Mensaje</label>
+                        <textarea class="input-text"></textarea>
+                    </div>
+    
+                    <div class="boton">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="social-media">
+                <p class="linkedin">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                        <line x1="8" y1="11" x2="8" y2="16" />
+                        <line x1="8" y1="8" x2="8" y2="8.01" />
+                        <line x1="12" y1="16" x2="12" y2="11" />
+                        <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                    </svg>
+                </p>
+
+                <p class="github">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                      </svg>
+                </p>
+
+                <p class="facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg>
+                </p>
+                <p class="instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="4" />
+                        <circle cx="12" cy="12" r="3" />
+                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                    </svg>
+                </p>
+            </div>
+        </div>
+                
+    </section>
+
+    <footer class="footer">
+        <p>Diseñado y desarrollado por Sebastián Fretes 2021. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="build/js/bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+.video {
+    position: relative;
+    overflow: hidden;
+    max-height: 55rem;
+
+    .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;    
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#828c95+0,28343b+99,28343b+99,b5bdc8+100&0.5+1,1+100 */
+        background: -moz-linear-gradient(-45deg,  rgba(130,140,149,0.5) 0%, rgba(129,139,148,0.5) 1%, rgba(40,52,59,0.99) 99%, rgba(181,189,200,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg,  rgba(130,140,149,0.5) 0%,rgba(129,139,148,0.5) 1%,rgba(40,52,59,0.99) 99%,rgba(181,189,200,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg,  rgba(130,140,149,0.5) 0%,rgba(129,139,148,0.5) 1%,rgba(40,52,59,0.99) 99%,rgba(181,189,200,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80828c95', endColorstr='#b5bdc8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+
+    .contenido-video {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+        line-height: 3rem;
+
+        h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        hr {
+            width: 60%;
+            height: 1px;
+            border: 0;
+            background-color: $grisClaro;
+            background-image: linear-gradient(to left, $grisClaro, $azulOscuro, $grisClaro);
+        }
+
+        p {
+            font-size: 2.8rem;
+            font-weight: bold;
+        }
+    }
+
+    video {
+        width: 100%;
+        display: block;
+    }
+}

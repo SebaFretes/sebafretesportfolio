@@ -1,0 +1,49 @@
+.skills {
+    background-color: $celeste;
+    margin: 1rem 0;
+
+    .skills-contenido {
+        padding: 1rem 0;
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            color: $negro;
+            margin: 0;
+        }
+    }
+
+    .skills-lista {
+        background-color: $grisClaro;
+        padding: 1rem;
+
+        ul {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            column-gap: 2rem;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            @include tablet {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                gap: 1.5rem;
+            }
+        }
+    }
+}
+
+.nombre-skills {
+    background-color: $negro;
+    color: $celeste;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    width: 12rem;
+    border-radius: 5px;
+}

@@ -1,0 +1,29 @@
+.navegacion {
+    background-color: $celesteOscuro;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: $separacion/2;
+
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+        gap: $separacion;
+    }
+
+    a {
+        color: $blanco;
+
+        &:hover {
+            background-color: $gris;
+        }
+    }
+
+    &.fijo {
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 .3rem .2rem;
+    }
+}

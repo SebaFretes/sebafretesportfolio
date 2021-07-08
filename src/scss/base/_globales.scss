@@ -1,0 +1,54 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $fuentePrincipal;
+    font-size: 1.6rem;
+    &.fijar-body {
+        overflow: hidden;
+    }
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 2rem;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    padding: .5rem;
+}
+
+.contenedor {
+    width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%; // para hacer todas las img responsivas
+}

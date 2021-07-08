@@ -1,0 +1,94 @@
+.contacto {
+    background-color: $grisClaro;
+    margin: 1rem 0;
+  
+    .contacto-contenido {
+        padding: 1rem 0;
+        background-color: $celeste;
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            color: $negro;
+            margin: 0;
+        }
+    }
+}
+
+.formulario {
+    padding-bottom: 1rem;
+    form {
+        background-color: $gris;
+        border-radius: 1rem;
+        padding: 1.5rem;
+    }
+    
+    width: 95%;
+    margin: 1rem auto;
+    
+    
+
+    @include tablet {
+        width: 60rem;
+    }
+    
+    fieldset {
+        border: none;
+        line-height: 5rem;
+    }  
+}
+
+.campo {
+    label {
+        font-weight: bold;
+        color: $blanco;
+    }
+    .input-text {
+        width: 100%;
+        border: none;
+        padding: 1.5rem;
+        border-radius: .5rem;
+    }
+
+    textarea {
+            height: 15rem;
+    }
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+
+    @include tablet {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    button {
+        text-transform: uppercase;
+        background-color: $celeste;
+        color: $blanco;
+        font-weight: bold;
+        font-size: 1.6rem;
+        padding: 1rem;
+        border: none;
+        border-radius: .5rem;
+        width: 100%;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $celesteOscuro;
+        }
+
+        @include tablet {
+            width: 10rem;
+        }
+    }
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    p {
+        cursor: pointer;
+    }
+}
